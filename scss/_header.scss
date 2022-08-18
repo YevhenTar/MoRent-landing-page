@@ -1,0 +1,102 @@
+@import "_variables";
+.main-header {
+    width: 100%;
+    border: 1px solid rgba(195, 212, 233, 0.4);
+    background-color: #fff;
+    &__wrap {
+        height: 124px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__search-block{
+        margin-left: 64px;
+    }
+}
+
+.logo-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.logo {
+    font-weight: 700;
+    font-size: 32px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #3563E9;
+}
+.search-block {
+    position: relative;
+    &__input {
+        min-width: 492px;
+        position: relative;
+        outline: none;
+        line-height: 1.5;
+        color: #3D5278;
+        background-image: url("../img/header/search-icon.svg");
+        background-repeat: no-repeat;
+        background-position: 20px center;
+        height: 44px;
+        padding: 0 55px 0 64px;
+        border: 1px solid rgba(195, 212, 233, 0.4);
+        border-radius: 70px;
+        &::placeholder{
+            line-height: 1.5;
+            letter-spacing: -0.02em;
+            color: #3D5278;
+        }
+    }
+    &__filter {
+        border-radius: 70px;
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 3;
+        cursor: pointer;
+    }
+    &__image {}
+}
+.user-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.burger-menu {
+    display: none;
+    &__line {
+        &_top {}
+        &_middle {}
+        &_bottom {}
+    }
+}
+.user-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    &__link {
+        margin-right: 20px;
+        border: 1px solid rgba(195, 212, 233, 0.4);
+        border-radius: 90px;
+        padding: 10px;
+        position: relative;
+        &:nth-child(2)::after{
+            content: "";
+            position: absolute;
+            display: inline-block;
+            width: 11px;
+            height: 11px;
+            border-radius: 50%;
+            background-color: #FF4423;
+            top: 0px;
+            right: 2px;
+        }
+    }
+    &__icon {}
+    &__user-photo {}
+}
