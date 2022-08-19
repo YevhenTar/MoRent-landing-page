@@ -8,6 +8,9 @@
     padding: 32px;
     min-width: 360px;
     border-right: 1px solid #F3F5F7;
+    @media(max-width: 575.98px){
+        display: none;
+    }
     &__container {
         margin-bottom: 56px;
         &:last-child{
@@ -55,24 +58,44 @@
 }
 .content-block {
     padding: 32px;
+    width: calc(100% - 360px);
+    @media(max-width: 575.98px){
+        padding: 32px 24px 24px;
+        width: 100%;
+    }
 		&__car-description {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             margin-bottom: 32px;
+            @media(max-width: 575.98px){
+                flex-direction: column;
+                justify-content: flex-start;
+            }
         }
 		&__reviews {
             padding: 24px;
             background-color: #fff;
             margin-bottom: 32px;
             border-radius: 10px;
+            @media(max-width: 575.98px){
+                padding: 16px;
+            }
         }
 		&__car-catalog {}
 }
 .image-gallery {
     margin-right: 32px;
+    @media(max-width: 575.98px){
+        margin-right: 0;
+        margin-bottom: 32px;
+    }
         &__main-image {
             margin-bottom: 24px;
+            @media(max-width: 575.98px){
+                width: 100%;
+                border-radius: 10px;
+            }
         }
 		&__additional-block {
             width: 100%;
@@ -85,19 +108,35 @@
             &:first-child{
                 width: 148px;
                 height: 124px;
+                @media(max-width: 575.98px){
+                    width: 96px;
+                    height: 64px;
+                    border-radius: 10px;
+                }
+            }
+            @media(max-width: 575.98px){
+                width: 96px;
+                height: 64px;
+                border-radius: 10px;
             }
         }
 }
 .description-block {
     padding: 24px 24px 32px;
     background-color: #FFFFFF;
-    border-radius: 10px;    
+    border-radius: 10px;   
+    @media(max-width: 575.98px){
+        padding: 16px;
+    } 
 		&__headline-block {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             align-items: flex-start;
             margin-bottom: 32px;
+            @media(max-width: 575.98px){
+                margin-bottom: 16px;
+            } 
         }
 		&__headline-wrap {}
 		&__headline {
@@ -106,6 +145,9 @@
             line-height: 1.4;
             color: #1A202C;
             margin-bottom: 5px;
+            @media(max-width: 575.98px){
+                font-size: 20px;
+            } 
         }
 		&__stars-block-info {
             display: flex;
@@ -120,11 +162,23 @@
             font-weight: 500;
             line-height: 1.3;
             white-space: pre-wrap;
+            letter-spacing: 0.02em;
+            @media(max-width: 575.98px){
+                font-size: 12px;
+            } 
         }
-		&__like-icon {}
+		&__like-icon {
+            @media(max-width: 575.98px){
+                display: none;
+            } 
+        }
 		&__text {
             font-size: 20px;
             margin-bottom: 32px;
+            @media(max-width: 575.98px){
+                font-size: 12px;
+                margin-bottom: 16px;
+            } 
         }
 		&__properties {
             margin-bottom: 68px;
@@ -132,6 +186,9 @@
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
+            @media(max-width: 575.98px){
+                margin-bottom: 32px;
+            } 
         }
 		&__price-block {
             display: flex;
@@ -147,6 +204,10 @@
 .stars-block {
     &__star {
         margin-right: 3px;
+        @media(max-width: 575.98px){
+            width: 12px;
+            margin-right: 4px;
+        }
         &:last-child{
             margin-right: 0;
         }
@@ -154,6 +215,9 @@
 }
 .properties-box{
     width: 40%;
+    @media(max-width: 575.98px){
+        width: 45%;
+    } 
 }
 .properties-wrap {
     display: flex;
@@ -167,23 +231,42 @@
             font-size: 20px;
             line-height: 1.3;
             color: #90A3BF;
+            @media(max-width: 575.98px){
+                font-size: 12px;
+            } 
         }
         &__value{
             font-weight: 600;
             font-size: 20px;
             line-height: 1.3;
+            @media(max-width: 575.98px){
+                font-size: 12px;
+            } 
         }
 }
 .price-wrap {
+    @media(max-width: 575.98px){
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: auto;
+        align-items: flex-start;
+    }
 		&__main-price {
             font-weight: 700;
             font-size: 28px;
             line-height: 1.3;
             color: #1A202C;
+            @media(max-width: 575.98px){
+                font-size: 20px;
+            } 
         }
         &__main-price-part{
             font-size: 16px;
             color: #90A3BF;
+            @media(max-width: 575.98px){
+                font-size: 12px;
+            } 
         }
 		&__old-price {
             font-weight: 700;
@@ -191,6 +274,9 @@
             line-height: 1.3;
             text-decoration-line: line-through;
             color: #90A3BF;
+            @media(max-width: 575.98px){
+                font-size: 12px;
+            }
         }
 }
 .rent-button {
@@ -207,6 +293,9 @@
         letter-spacing: -0.02em;
         color: #1A202C;
         margin-bottom: 32px;
+        @media(max-width: 575.98px){
+            margin-bottom: 24px;
+        }
     }
     &__quantity {
         display: inline-block;
@@ -218,6 +307,7 @@
         color: #FFFFFF;
         margin-left: 12px;
         padding: 6px 12px;
+        letter-spacing: normal;
     }
     &__button-block{
         padding-top: 24px;
@@ -242,6 +332,10 @@
             top: 56%;
             transform: translateY(-50%);
         }
+        @media(max-width: 575.98px){
+            font-size: 14px;
+            padding: 10px 22px 10px 0;
+        }
     }
 }
 .reviews-block {
@@ -251,10 +345,17 @@
     align-items: flex-start;
     &:nth-child(2){
         margin-bottom: 24px;
+        @media(max-width: 575.98px){
+            margin-bottom: 20px;
+        }
     }
 }
 .reviews-photo {
     margin-right: 16px;
+    @media(max-width: 575.98px){
+        width: 44px;
+        margin-right: 8px;
+    }
 }
 .reviews-info {
     &__headline-block {
@@ -263,6 +364,9 @@
         justify-content: space-between;
         align-items: flex-start;
         margin-bottom: 12px;
+        @media(max-width: 575.98px){
+            margin-bottom: 16px;
+        }
     }
     &__headline-wrap {
         &:last-child{
@@ -276,12 +380,19 @@
         line-height: 1.3;
         color: #1A202C;
         margin-bottom: 8px;
+        @media(max-width: 575.98px){
+            font-size: 16px;
+        }
     }
     &__profession {
         font-weight: 500;
         line-height: 1.3;
         color: #90A3BF;
         white-space: pre-wrap;
+        @media(max-width: 575.98px){
+            font-size: 12px;
+            letter-spacing: -0.01em;
+        }
     }
     &__date {
         font-weight: 500;
@@ -289,6 +400,26 @@
         color: #90A3BF;
         white-space: pre-wrap;
         margin-bottom: 8px;
+        @media(max-width: 575.98px){
+            font-size: 12px;
+            letter-spacing: -0.01em;
+        }
+    }
+    &__text{
+        @media(max-width: 575.98px){
+            font-size: 12px;
+        }
+    }
+    &__text-point{
+        display: none;
+        @media(max-width: 575.98px){
+            display: inline;
+        }
+    }
+    &__text-end{
+        @media(max-width: 575.98px){
+            display: none;
+        }
     }
 }
 .car-catalog {
@@ -420,12 +551,6 @@
 }
 .card-catalog {
     &__like-icon {}
-}
-.btn {
-}
-.btn-primary {
-}
-.rent-button {
 }
 
 
