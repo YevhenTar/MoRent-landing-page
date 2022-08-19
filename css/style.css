@@ -1083,11 +1083,17 @@ h5 {
 }
 @media (max-width: 575.98px) {
   .car-catalog__image-wrap {
+    height: 84px;
     margin-bottom: 32px;
   }
 }
 .car-catalog__image {
   width: 100%;
+}
+@media (max-width: 575.98px) {
+  .car-catalog__image {
+    width: 85%;
+  }
 }
 .car-catalog__properties-wrap {
   display: -webkit-box;

@@ -511,11 +511,15 @@
         align-items: flex-end;
         margin-bottom: 28px;
         @media(max-width: 575.98px){
+            height: 84px;
             margin-bottom: 32px;
         }
     }
     &__image{
         width: 100%;
+        @media(max-width: 575.98px){
+            width: 85%;
+        }
     }
     &__properties-wrap {
         display: flex;
