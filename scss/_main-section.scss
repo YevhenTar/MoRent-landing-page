@@ -168,9 +168,6 @@
             } 
         }
 		&__like-icon {
-            @media(max-width: 575.98px){
-                display: none;
-            } 
         }
 		&__text {
             font-size: 20px;
@@ -436,19 +433,27 @@
         height: 44px;
         padding: 0 32px 0 20px;
         margin-bottom: 16px;
+        @media(max-width: 575.98px){
+            height: 20px;
+            padding: 0;
+            margin-bottom: 20px;
+        }
     }
     &__headline {
         font-weight: 600;
         line-height: 1.3;
         color: #90A3BF;
-        &_change-color{
-            color: #3563E9;
+        @media(max-width: 575.98px){
+            font-size: 14px;
         }
     }
     &__button {
         font-weight: 600;
         line-height: 1.3;
         color: #3563E9;
+        @media(max-width: 575.98px){
+            font-size: 14px;
+        }
     }
     &__card-block {
         width: 100%;
@@ -462,6 +467,12 @@
         border-radius: 10px;
         padding: 24px;
         min-width: 317px;
+        margin-right: 32px;
+        @media(max-width: 575.98px){
+            padding: 16px;
+            min-width: 240px;
+            margin-right: 20px;
+        }
     }
     &__name-wrap {
         display: flex;
@@ -469,6 +480,9 @@
         justify-content: space-between;
         align-items: flex-start;
         margin-bottom: 38px;
+        @media(max-width: 575.98px){
+            margin-bottom: 16px;
+        }
     }
     &__name-block {}
     &__name {
@@ -476,12 +490,18 @@
         line-height: 1.3;
         color: #1A202C;
         margin-bottom: 4px;
+        @media(max-width: 575.98px){
+            font-size: 16px;
+        }
     }
     &__type {
         font-weight: 700;
         line-height: 1.3;
         color: #90A3BF;
         letter-spacing: normal;
+        @media(max-width: 575.98px){
+            font-size: 12px;
+        }
     }
     &__image-wrap{
         height: 122px;
@@ -490,6 +510,12 @@
         justify-content: center;
         align-items: flex-end;
         margin-bottom: 28px;
+        @media(max-width: 575.98px){
+            margin-bottom: 32px;
+        }
+    }
+    &__image{
+        width: 100%;
     }
     &__properties-wrap {
         display: flex;
@@ -497,6 +523,9 @@
         justify-content: space-between;
         align-items: flex-start;
         margin-bottom: 32px;
+        @media(max-width: 575.98px){
+            margin-bottom: 28px;
+        }
     }
     &__properties-box{
         display: flex;
@@ -506,12 +535,19 @@
     }
     &__properties-image {
         margin-right: 8px;
+        @media(max-width: 575.98px){
+            width: 14px;
+            margin-right: 4px;
+        }
     }
     &__properties-text {
         font-weight: 500;
         line-height: 1.3;
         color: #90A3BF;
         letter-spacing: normal;
+        @media(max-width: 575.98px){
+            font-size: 12px;
+        }
     }
     &__price-block {
         display: flex;
@@ -527,12 +563,18 @@
         line-height: 1.3;
         color: #1A202C;
         letter-spacing: normal;
+        @media(max-width: 575.98px){
+            font-size: 16px;
+        }
     }
     &__main-price-part {
         font-weight: 700;
         font-size: 14px;
         line-height: 1.3;
         color: #90A3BF;
+        @media(max-width: 575.98px){
+            font-size: 12px;
+        }
     }
     &__old-price {
         font-weight: 700;
@@ -540,6 +582,9 @@
         text-decoration-line: line-through;
         color: #90A3BF;
         letter-spacing: normal;
+        @media(max-width: 575.98px){
+            font-size: 12px;
+        }
     }
     &__rent-button {
         font-weight: 600;
@@ -547,6 +592,10 @@
         line-height: 1.3;
         padding: 0 20px;
         height: 44px;
+        @media(max-width: 575.98px){
+            font-size: 12px;
+            height: 36px;
+        }
     }
 }
 .card-catalog {
