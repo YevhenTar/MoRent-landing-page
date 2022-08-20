@@ -2,7 +2,7 @@
 .main-footer {
     background-color: #fff;
     padding: 20px 0;
-    @media(max-width: 575.98px){
+    @media(max-width: 767.98px){
         padding: 24px 0;
         background-color: transparent;
     }
@@ -12,8 +12,11 @@
         justify-content: space-between;
         align-items: flex-start;
         padding: 60px 0;
-        @media(max-width: 575.98px){
+        @media(max-width: 991.98px){
             flex-wrap: wrap;
+            padding: 60px 0 36px;
+        }
+        @media(max-width: 767.98px){
             padding: 0;
         }
     }
@@ -23,8 +26,13 @@
         font-size: 16px;
         letter-spacing: -0.01em;
         color: rgba(19, 19, 19, 0.6);
-        @media(max-width: 575.98px){
+        @media(max-width: 991.98px){
+            max-width: inherit;
+        }
+        @media(max-width: 767.98px){
             font-size: 12px;
+        }
+        @media(max-width: 575.98px){
             max-width: 225px;
         }
     }
@@ -36,7 +44,7 @@
         align-items: center;
         width: 96%;
         border-top: 1px solid rgba(19, 19, 19, 0.16);
-        @media(max-width: 575.98px){
+        @media(max-width: 767.98px){
             flex-direction: column-reverse;
             align-items: flex-start;
             padding: 24px 0 0;
@@ -46,7 +54,10 @@
 }
 .footer-logo-wrap{
     width: 50%;
-    @media(max-width: 575.98px){
+    @media(max-width: 1199.98px){
+        width: 40%;
+    }
+    @media(max-width: 991.98px){
         width: 100%;
         margin-bottom: 24px;
     }
@@ -60,29 +71,50 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
-    @media(max-width: 575.98px){
+    @media(max-width: 1199.98px){
+        width: 60%;
+    }
+    @media(max-width: 991.98px){
+        width: 100%;
+    }
+    @media(max-width: 767.98px){
         width: 100%;
         flex-wrap: wrap;
     }
 }
 .footer-block {
     width: 40%;
-    &:last-child{
-        width: 30%;
+    @media(max-width: 991.98px){
+        padding: 24px 0;
     }
     @media(max-width: 575.98px){
         width: 50%;
-        padding: 24px 0;
     }
     &:nth-child(2){
+        order: 2;
+        @media(max-width: 1199.98px){
+            width: 37%;
+        }
         @media(max-width: 575.98px){
             order: 3;
         }
     }
     &:nth-child(3){
+        width: 30%;
+        order: 3;
+        @media(max-width: 1199.98px){
+            width: 27%;
+        }
+        @media(max-width: 991.98px){
+            width: 30%;
+        }
+        @media(max-width: 767.98px){
+            width: 23%;
+        }
         @media(max-width: 575.98px){
             width: 40%;
             padding-left: 40px;
+            order: 2;
         }
     }
     &__headline {
@@ -91,7 +123,7 @@
         line-height: 1.2;
         color: #131313;
         margin-bottom: 24px;
-        @media(max-width: 575.98px){
+        @media(max-width: 767.98px){
             margin-bottom: 16px;
         }
     }
@@ -111,7 +143,10 @@
         line-height: 2;
         letter-spacing: -0.01em;
         color: #131313;
-        @media(max-width: 575.98px){
+        @media(max-width: 991.98px){
+            font-size: 14px;
+        }
+        @media(max-width: 767.98px){
             font-size: 12px;
         }
     }
@@ -120,7 +155,7 @@
         flex-direction: row;
         justify-content: flex-end;
         align-items: center;
-        @media(max-width: 575.98px){
+        @media(max-width: 767.98px){
             justify-content: space-between;
             width: 100%;
             margin-bottom: 32px;
@@ -129,7 +164,10 @@
     &__list-item {
         &:first-child{
             margin-right: 60px;
-            @media(max-width: 575.98px){
+            @media(max-width: 991.98px){
+                margin-right: 24px;
+            }
+            @media(max-width: 767.98px){
                 margin-right: 0;
             }
         }
@@ -139,7 +177,10 @@
         line-height: 2;
         letter-spacing: -0.01em;
         color: #131313;
-        @media(max-width: 575.98px){
+        @media(max-width: 991.98px){
+            font-size: 14px;
+        }
+        @media(max-width: 767.98px){
             font-size: 12px;
         }
     }
