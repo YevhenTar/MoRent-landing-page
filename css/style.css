@@ -714,6 +714,10 @@ h5 {
     font-size: 12px;
   }
 }
+.description-block__like-icon path {
+  fill: #ED3F3F;
+  stroke: #ED3F3F;
+}
 .description-block__text {
   font-size: 20px;
   margin-bottom: 32px;
@@ -1211,6 +1215,13 @@ h5 {
     font-size: 12px;
   }
 }
+.car-catalog__like-icon {
+  cursor: pointer;
+}
+.car-catalog__like-icon path {
+  fill: none;
+  stroke: #90A3BF;
+}
 .car-catalog__image-wrap {
   height: 122px;
   display: -webkit-box;
@@ -1370,6 +1381,11 @@ h5 {
 
 .car-catalog__button.is-active {
   color: #3563E9;
+}
+
+.car-catalog__like-icon.is-clicked path {
+  fill: #ED3F3F;
+  stroke: #ED3F3F;
 }
 
 .main-footer {

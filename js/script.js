@@ -9,6 +9,11 @@ const recomendedCarBlock = $('#recomended-car-block');
 let recentCarCheck = false;
 let recomendedCarCheck = false;
 
+const likeIcons = document.querySelectorAll('.car-catalog__like-icon');
+console.log(likeIcons);
+
+let likeIconCheck = false;
+
 
 recentCarBtn.on('click', function (e) {
     e.preventDefault();
@@ -34,4 +39,10 @@ recomendedCarBtn.on('click', function (e) {
         recomendedCarBlock.addClass('is-active');
         recomendedCarCheck = true;
     }
+});
+
+likeIcons.forEach((likeIcon) => {
+    likeIcon.addEventListener("click", () => {
+        likeIcon.classList.toggle('is-clicked');
+    });
 });

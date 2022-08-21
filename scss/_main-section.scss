@@ -232,6 +232,10 @@
             } 
         }
 		&__like-icon {
+            & path{
+                fill: #ED3F3F;
+                stroke: #ED3F3F;
+            }
         }
 		&__text {
             font-size: 20px;
@@ -577,6 +581,13 @@
             font-size: 12px;
         }
     }
+    &__like-icon{
+        cursor: pointer;
+        & path{
+            fill: none;
+            stroke: #90A3BF;
+        }
+    }
     &__image-wrap{
         height: 122px;
         display: flex;
@@ -676,14 +687,17 @@
         }
     }
 }
-.card-catalog {
-    &__like-icon {}
-}
+
 .car-catalog__card-block.is-active{
     overflow-x: auto;
 }
 .car-catalog__button.is-active{
     color: #3563E9;
+}
+
+.car-catalog__like-icon.is-clicked path{
+    fill: #ED3F3F;
+    stroke: #ED3F3F;
 }
 
 
