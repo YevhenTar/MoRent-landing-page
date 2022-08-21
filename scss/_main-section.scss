@@ -520,7 +520,7 @@
     &__button {
         font-weight: 600;
         line-height: 1.3;
-        color: #3563E9;
+        color: #90A3BF;
         @media(max-width: 575.98px){
             font-size: 14px;
         }
@@ -531,6 +531,7 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-start;
+        overflow-x: visible;
     }
     &__card {
         background: #FFFFFF;
@@ -677,6 +678,12 @@
 }
 .card-catalog {
     &__like-icon {}
+}
+.car-catalog__card-block.is-active{
+    overflow-x: auto;
+}
+.car-catalog__button.is-active{
+    color: #3563E9;
 }
 
 
