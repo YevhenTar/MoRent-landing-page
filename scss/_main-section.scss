@@ -11,6 +11,9 @@
     border-right: 1px solid #F3F5F7;
     position: absolute;
     height: 100%;
+    @media(max-width: 1399.98px){
+        width: calc(50% - 307px);
+    }
     @media(max-width: 1199.98px){
         width: calc(50% - 180px);
     }
@@ -73,12 +76,15 @@
     padding: 32px 0 32px 32px;
     width: calc(100% - 248px);
     margin-left: auto;
+    @media(max-width: 1399.98px){
+        padding: 32px 0;
+        width: calc(100% - 280px);
+    }
     @media(max-width: 1199.98px){
         padding: 32px 0 24px;
         width: calc(100% - 320px);
     }
     @media(max-width: 991.98px){
-        padding: 32px 0 24px;
         width: calc(100% - 220px);
     }
     @media(max-width: 767.98px){
@@ -89,8 +95,10 @@
             flex-direction: row;
             justify-content: space-between;
             margin-bottom: 32px;
-            @media(max-width: 1199.98px){
+            @media(max-width: 1399.98px){
                 flex-direction: column;
+            }
+            @media(max-width: 1199.98px){
                 justify-content: flex-start;
             }
         }
@@ -107,15 +115,30 @@
 }
 .image-gallery {
     margin-right: 32px;
+    @media(max-width: 1399.98px){
+        margin-right: 0;
+        margin-bottom: 32px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+    }
     @media(max-width: 1199.98px){
+        flex-direction: column;
         margin-right: 0;
         margin-bottom: 32px;
     }
         &__main-image {
             margin-bottom: 24px;
             border-radius: 10px;
+            @media(max-width: 1399.98px){
+                margin-bottom: 0;
+                margin-right: 24px;
+            }
             @media(max-width: 1199.98px){
                 width: 100%;
+                margin-bottom: 24px;
+                margin-right: 0;
             }
         }
 		&__additional-block {
@@ -124,6 +147,17 @@
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
+            @media(max-width: 1399.98px){
+                width: auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+            }
+            @media(max-width: 1199.98px){
+                width: 100%;
+                flex-direction: row;
+            }
         }
 		&__small-image {
             &:first-child{
@@ -134,6 +168,15 @@
                     height: 64px;
                     border-radius: 10px;
                 }
+            }
+            &:last-child{
+                margin-bottom: 0;
+            }
+            @media(max-width: 1399.98px){
+                margin-bottom: 12px;
+            }
+            @media(max-width: 1199.98px){
+                margin-bottom: 0;
             }
             @media(max-width: 575.98px){
                 width: 96px;
