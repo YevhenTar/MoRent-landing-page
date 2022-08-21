@@ -108,7 +108,6 @@
             padding: 12px;
         }
     }
-    &__image {}
 }
 .user-block {
     display: flex;
@@ -134,8 +133,6 @@
         background-color: #3D5278;
         margin-bottom: 5px;
         display: block;
-        &_top {}
-        &_middle {}
         &_bottom {
             margin-bottom: 0;
         }
@@ -170,7 +167,6 @@
             right: 2px;
         }
     }
-    &__icon {}
     &__user-photo {
         @media(max-width: 575.98px){
             width: 28px;

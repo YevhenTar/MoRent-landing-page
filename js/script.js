@@ -56,3 +56,7 @@ likeIcons.forEach((likeIcon) => {
         likeIcon.classList.toggle('is-clicked');
     });
 });
+
+$('.search-block__filter').on('click', function (e) {
+    $('.filter-block').fadeToggle(600);
+});
