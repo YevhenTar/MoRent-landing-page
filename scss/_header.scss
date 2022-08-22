@@ -53,7 +53,7 @@
     font-size: 32px;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: #3563E9;
+    color: $logo-color;
     @media(max-width: 767.98px){
         font-size: 24px;
         letter-spacing: normal;
@@ -68,7 +68,7 @@
         font-weight: 500;
         font-size: 14px;
         line-height: 1.5;
-        color: #3D5278;
+        color: $search-block-color;
         background-image: url("../img/header/search-icon.svg");
         background-repeat: no-repeat;
         background-position: 20px center;
@@ -81,7 +81,7 @@
             font-size: 14px;
             line-height: 1.5;
             letter-spacing: -0.02em;
-            color: #3D5278;
+            color: $search-placeholder-color;
         }
         @media(max-width: 991.98px){
             min-width: auto;
@@ -130,7 +130,7 @@
         width: 20px;
         height: 2px;
         border-radius: 4px;
-        background-color: #3D5278;
+        background-color: $burger-line-color;
         margin-bottom: 5px;
         display: block;
         &_bottom {
@@ -162,7 +162,7 @@
             width: 11px;
             height: 11px;
             border-radius: 50%;
-            background-color: #FF4423;
+            background-color: $header-link-alert-color;
             top: 0px;
             right: 2px;
         }

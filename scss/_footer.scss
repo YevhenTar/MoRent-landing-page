@@ -1,10 +1,10 @@
 @import "_variables";
 .main-footer {
-    background-color: #fff;
+    background-color: $bg-color-prime;
     padding: 20px 0;
     @media(max-width: 767.98px){
         padding: 24px 0;
-        background-color: transparent;
+        background-color: $bg-color-secondary;
     }
     &__menu {
         display: flex;
@@ -25,7 +25,7 @@
         font-weight: 500;
         font-size: 16px;
         letter-spacing: -0.01em;
-        color: rgba(19, 19, 19, 0.6);
+        color: $footer-text-color;
         @media(max-width: 991.98px){
             max-width: inherit;
         }
@@ -127,14 +127,12 @@
             margin-bottom: 16px;
         }
     }
-    &__list {}
     &__list-item {
         margin-bottom: 24px;
         &:last-child{
             margin-bottom: 0;
         }
     }
-    &__link {}
 }
 .copyright-block {
     &__text {
@@ -142,7 +140,7 @@
         font-size: 16px;
         line-height: 2;
         letter-spacing: -0.01em;
-        color: #131313;
+        color: $footer-copyright-text-color;
         @media(max-width: 991.98px){
             font-size: 14px;
         }
@@ -175,8 +173,8 @@
     &__link {
         font-weight: 600;
         line-height: 2;
+        color: $footer-copyright-link-color;
         letter-spacing: -0.01em;
-        color: #131313;
         @media(max-width: 991.98px){
             font-size: 14px;
         }
