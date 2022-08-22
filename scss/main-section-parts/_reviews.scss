@@ -5,7 +5,7 @@
         font-size: 20px;
         line-height: 1.3;
         letter-spacing: -0.02em;
-        color: #1A202C;
+        color: $reviews-headline-color;
         margin-bottom: 32px;
         @media(max-width: 575.98px){
             margin-bottom: 24px;
@@ -32,7 +32,7 @@
         padding: 10px 24px 10px 0;
         font-weight: 600;
         line-height: 1.3;
-        color: #90A3BF;
+        color: $reviews-button-color;
         position: relative;
         &::after{
             content: url("../img/main-section/arrow-down.svg");
@@ -99,7 +99,7 @@
     &__name {
         font-weight: 700;
         line-height: 1.3;
-        color: #1A202C;
+        color: $reviews-block-name-color;
         margin-bottom: 8px;
         @media(max-width: 575.98px){
             font-size: 16px;
@@ -108,7 +108,7 @@
     &__profession {
         font-weight: 500;
         line-height: 1.3;
-        color: #90A3BF;
+        color: $reviews-block-profession-color;
         white-space: pre-wrap;
         @media(max-width: 575.98px){
             font-size: 12px;
@@ -118,7 +118,7 @@
     &__date {
         font-weight: 500;
         line-height: 1.3;
-        color: #90A3BF;
+        color: $reviews-block-date-color;
         white-space: pre-wrap;
         margin-bottom: 8px;
         @media(max-width: 575.98px){
