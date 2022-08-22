@@ -872,9 +872,6 @@ h5 {
 .reviews-block:last-child {
   margin-bottom: 0;
 }
-.reviews-block_is-hired {
-  display: none;
-}
 
 .reviews-photo {
   margin-right: 16px;
@@ -972,6 +969,10 @@ h5 {
   .reviews-info__text-end {
     display: none;
   }
+}
+
+.hired-reviews {
+  display: none;
 }
 
 /* Colors */

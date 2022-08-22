@@ -4,14 +4,12 @@ const reviewsBtn = $('.reviews__button');
 const recentCarBtn = $('#recent-car-btn');
 const recomendedCarBtn = $('#recomended-car-btn');
 
-const reviewsBlock = $('.reviews-block');
 const recentCarBlock = $('#recent-car-block');
 const recomendedCarBlock = $('#recomended-car-block');
 
 let recentCarCheck = false;
 let recomendedCarCheck = false;
-
-let reviewsBlocks = document.querySelectorAll('.reviews-block_is-hired');
+let reviewsBlockCheck = false;
 
 const likeIcons = document.querySelectorAll('.car-catalog__like-icon');
 
@@ -19,9 +17,13 @@ reviewsBtn.on('click', function (e) {
     e.preventDefault();
     $(this).toggleClass('show-all');
     setTimeout(function () {
-        reviewsBlocks.forEach((reviewsBlock) => {
-            reviewsBlock.classList.toggle('reviews-block_is-hired');
-        });
+        if (reviewsBlockCheck) {
+            $('.hired-reviews').slideUp(1000);
+            reviewsBlockCheck = false;
+        } else {
+            $('.hired-reviews').slideDown(1000);
+            reviewsBlockCheck = true;
+        }
     }, 800);
 });
 

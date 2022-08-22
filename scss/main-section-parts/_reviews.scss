@@ -67,9 +67,6 @@
     &:last-child{
         margin-bottom: 0;
     }
-    &_is-hired{
-        display: none;
-    }
 }
 .reviews-photo {
     margin-right: 16px;
@@ -142,4 +139,7 @@
             display: none;
         }
     }
+}
+.hired-reviews{
+    display: none;
 }
