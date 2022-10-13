@@ -356,6 +356,9 @@ h5 {
   top: 0px;
   right: 2px;
 }
+.user-menu__user-photo {
+  cursor: pointer;
+}
 @media (max-width: 575.98px) {
   .user-menu__user-photo {
     width: 28px;

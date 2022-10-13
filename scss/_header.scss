@@ -168,6 +168,7 @@
         }
     }
     &__user-photo {
+        cursor: pointer;
         @media(max-width: 575.98px){
             width: 28px;
         }
